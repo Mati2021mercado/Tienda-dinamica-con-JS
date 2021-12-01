@@ -1,0 +1,165 @@
+
+@media only screen and (max-width: 950px) {
+  .list {
+    .list__item {
+      .navbar__title {
+        display: none;
+      }
+      a {
+        i {
+          font-size: 25px;
+          display: flex;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .header__fixed {
+    .header__fixed__contenedor-icons {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-footer2 {
+    div {
+      a {
+        i {
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 570px) {
+  nav {
+    text-align: start;
+    .checkbtn {
+      display: inline-block;
+      position: fixed;
+      top: 0;
+      margin-top: 20px;
+      margin-left: 7px;
+      z-index: 1100;
+      margin-top: 12px;
+    }
+  }
+  
+  .list {
+    background-color: rgb(24, 23, 23);
+    position: relative;
+    .list__item__modal{
+      .btnRegistrarse{
+        background-color: transparent;
+      }
+    }
+    .list__item {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 0px;
+      line-height: 45px;
+      &:hover{
+        .list--second {
+          width: 100%;
+          li{
+            .list--second__item{
+            font-size: 1.2rem;
+            }
+          }
+        }
+      }
+      a {
+        i {
+          display: none;
+        }
+      }
+      .navbar__title {
+        display: block;
+        font-size: 21.5px;
+        color: #3dffbc;
+      }
+      .btnRegistrarse {
+        font-size: 21.5px;
+        color: #3dffbc;
+        
+      }
+    }
+  }
+
+  .form-check.form-switch.navbar__title {
+    display: flex;
+    margin: auto;
+  }
+  .form-check-input {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    left: 45%;
+  }
+  .form-check-label {
+    display: flex;
+    margin: auto;
+  }
+  .header__fixed {
+    .header__fixed__contenedor {
+      display: none;
+    }
+    .header__fixed__searcher {
+      margin-right: 0;
+      margin-left: 65px;
+    }
+  }
+  .header__title {
+      display: none;
+  }
+  main {
+    padding-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  //* cuando se haga hover por primera vez no pasara nada, hasta que se presione el checkbox */
+  .main__producto {
+    &:hover {
+      .main__producto__informacion {
+        display: none;
+      }
+    }
+  }
+  .checkInfo {
+    font-size: 26px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    z-index: 250;
+    i {
+    color: rgb(0, 0, 0);
+  }
+}
+
+  //* CON EL CHECKBOX DECIDO SI LA INFORMACION SE MUESTRA O NO HEREDA EL DISPLAY NONE CON DISPLAY: INHERIT Y CON CADA CHECK EN CHECKBOX LA MUESTRO O NO*/
+  #checkp1:checked ~ .main__producto__informacion,
+  #checkp2:checked ~ .main__producto__informacion,
+  #checkp3:checked ~ .main__producto__informacion,
+  #checkp4:checked ~ .main__producto__informacion,
+  #checkp5:checked ~ .main__producto__informacion,
+  #checkp6:checked ~ .main__producto__informacion,
+  #checkp7:checked ~ .main__producto__informacion,
+  #checkp8:checked ~ .main__producto__informacion {
+  z-index: 300;
+  display: inherit;
+  }
+}
+
+
+
+

@@ -1,0 +1,31 @@
+$blanco: #fff;
+$verdeFluor: #3dffbc;
+$fondoBlanco: #ebebeb;
+$fondoNegro: #1b1a1a;
+$verdeFluor-2: #1fd294;
+$amarilloViejo: #f3bf13;
+$doradoBitcoin: #c49d1f;
+
+%btn{
+    background: linear-gradient(to right, $verdeFluor-2, $verdeFluor);
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    &:hover {
+        color: #fff;
+      }
+    &:focus {
+        outline: none;
+        outline-width: 0;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        border: none;
+        box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.2);
+    }
+    &:active {
+        box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.2);
+      }
+}
