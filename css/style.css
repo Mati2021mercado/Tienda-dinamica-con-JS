@@ -175,7 +175,6 @@ main {
             width: 100%;
             text-align: center;
             margin: auto;
-            color: #da0505;
             padding-top: 20px; }
         main .contenedor__grid #div__compra.activate #div__compra__contenedor .compra__datos__producto {
           flex-basis: 50%;
@@ -436,7 +435,9 @@ footer {
   .header__title {
     display: none; }
   main {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+    main .contenedor__grid #div__compra.activate #div__compra__contenedor {
+      flex-direction: column; } }
 
 @media only screen and (max-width: 450px) {
   .main__producto:hover .main__producto__informacion {

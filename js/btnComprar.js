@@ -7,7 +7,6 @@ class CompraIndividual{
             this.leerDatosProducto(producto);
 
         }
-        
     }
     leerDatosProducto(producto){
         const infoProducto = {
@@ -17,22 +16,17 @@ class CompraIndividual{
             id : producto.querySelector(".main__producto__botones__carrito").getAttribute("data-id"),
             cantidad : 1
         }
-        
         this.insertarCompra(infoProducto);
        
     }
     insertarCompra(producto){
-        
-        console.log(producto.id);
 
         $("#div__compra").addClass("activate");
-        
         $(".div__compra__conenedor__imagen img").attr("src", producto.imagen);
         $(".div__compra__titulo").html(producto.titulo);
         $(".div__compra__parrafo1").html("precio: $" + producto.precio);
         
         this.sumarImpuestos(producto);
-
     }
     sumarImpuestos(producto){
         const iva = Math.round(0.21 * producto.precio);
@@ -40,5 +34,4 @@ class CompraIndividual{
 
         $(".div__compra__parrafo2").html("IVA: $" + iva);
     }
-    
 }    

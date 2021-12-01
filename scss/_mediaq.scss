@@ -121,6 +121,14 @@
   }
   main {
     padding-top: 15px;
+    .contenedor__grid{
+      #div__compra.activate{
+        #div__compra__contenedor{
+          flex-direction: column;
+          
+        }
+      }
+    }
   }
 }
 
