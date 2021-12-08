@@ -22,7 +22,7 @@
 
 
     
-    <main>
+    <main class="main_compra">
         <div class="container contenedor-compras">
             <div class="row mt-3">
                 <div class="col">
@@ -38,12 +38,12 @@
                     </div>
                     
                     
-                    <form id="procesar-pago" action="#" onsubmit="return false">
+                    <form id="procesar-pago" class="form__procesar-pago" action="#" onsubmit="return false">
                         
                         
 
 
-                        <div id="carrito" class="form-group table-responsive " >
+                        <div id="carrito" class="form-group table-responsive container__carrito" >
                             <table class="table tabla_productos" id="lista-compra" >
                                 <thead>
                                     <tr>
@@ -69,16 +69,16 @@
 
                             <div class="datos_cliente-producto">
                                 <div class="informacion_privada">
-                                    <div>
-                                        <label for="cliente" class="">Nombre:</label>
-                                        <div class="col-12 col-md-10">
+                                    <div class="informacion_privada__dato">
+                                        <label for="cliente" >Nombre:</label>
+                                        <div >
                                             <input type="text" class="form-control" id="cliente"
                                                 placeholder="Ingrese su nombre" name="destinatario">
                                         </div>
                                     </div>
-                                    <div >
-                                        <label for="email" class="">Correo:</label>
-                                        <div class="col-12 col-md-10">
+                                    <div  class="informacion_privada__dato">
+                                        <label for="email" >Correo:</label>
+                                        <div >
                                             <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" name="cc_to">
                                         </div>
                                     </div>
